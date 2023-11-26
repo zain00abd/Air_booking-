@@ -26,16 +26,17 @@
 }
 
 body{
-  /* background:linear-gradient(to left,rgba(75, 209, 187, 0.719),rgba(1, 70, 126, 0.541)); */
-  background: url("https://firebasestorage.googleapis.com/v0/b/photo-b068f.appspot.com/o/pexels-cameron-casey-1157255.jpg?alt=media&token=af56f410-9b1f-47ec-ae72-e57f8e3e7f62");
-
-  background-size: 100%;
+  background:linear-gradient(to left,rgba(75, 209, 187, 0.719),rgba(1, 70, 126, 0.541));
+  
 }
 #pack_1{
-  background-color: #a9aaad9f;
+  background: url("/Photo\ by\ Nathan\ Hobbs\ on\ Unsplash.jpeg");
+  background-color: #a9aaad34;
+  direction: rtl;
+  
 }
 #pack_1 input{
-  background-color: #313d46d2;
+  background-color: #313d46e7;
 }
 input::placeholder{
   color: #ffffff;
