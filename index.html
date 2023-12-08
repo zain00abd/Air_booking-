@@ -1,49 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking_Air</title>
-    <link rel="stylesheet" href="JS Bootstrap File/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking_Air</title>
+  <link rel="stylesheet" href="JS Bootstrap File/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonter/css/all.min.css">
 </head>
+
 <body>
+
+  <div class="container mt-3" id="page_submit">
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label" id="tex_from"> الأسم </label>
+        <input type="text" class="form-control" id="inp_from" aria-describedby="emailHelp"
+          placeholder=" ادخل الاسم هنا ">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> نوع البسبورات </label>
+        <input type="text" class="form-control" id="inp_from">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> فيزا </label>
+        <input type="text" class="form-control" id="inp_from">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> اقامة </label>
+        <input type="text" class="form-control" id="inp_from">
+      </div>
+
+      <div class="" id="page_inns">
+
+        <h3 class="text-white text-center mb-3 col-4" style="text-align: center; width: 100%;"> الوجهات </h3>
+
+
+        <div class="row m-1" id="page_ins">
+
+          <div class="mb-3 col-sm-12 col-lg-6">
+            <div class="input-group" id="inp_from">
+              <span class="input-group-text" id="tex_from"> من </span>
+              <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع..... ">
+              <datalist id="cityList"></datalist>
+              <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
+                  style="color: #c5d4f8;"></i></span>
+            </div>
+          </div>
+
+
+          <div class="mb-3 col-sm-12 col-lg-6">
+            <div class="input-group" id="inp_from">
+              <span class="input-group-text"> الى </span>
+              <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
+              <datalist id="cityList"></datalist>
+              <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
+                  style="color: #c5d4f8;"></i></span>
+            </div>
+          </div>
+
+
+          <div class="mb-3 col-sm-12 col-lg-6">
+            <div class="input-group" id="inp_from">
+              <span class="input-group-text"> تاريخ المغادرة </span>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
+                  style="color: #c5d4f8;"></i></span>
+            </div>
+          </div>
+
+
+          <div class="mb-3 col-sm-12 col-lg-6">
+            <div class="input-group" id="inp_from">
+              <span class="input-group-text"> تاريخ العودة </span>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
+                  style="color: #c5d4f8;"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> الشركة </label>
+        <input type="text" class="form-control" id="inp_from">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> الوزن </label>
+        <input type="number" class="form-control" id="inp_from">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="tex_from"> رقم الهاتف </label>
+        <input type="tel" class="form-control" id="inp_from">
+      </div>
+      <button type="submit" class="btn btn-primary" id="tex_from"> أرسال </button>
+    </form>
+
+  </div>
+  <script src="JS Bootstrap File/js/bootstrap.js"></script>
+  <script src="JS Bootstrap File/popper/popper.js"></script>
+
+  <script>
+    const username = 'helonan';
+
+    document.getElementById('cityInput').addEventListener('input', function (event) {
+      App(event)
+    });
+
+    document.getElementById('cityoutput').addEventListener('input', function (event) {
+      App(event)
+    });
     
+    function App(e){
 
-    <div class="container mt-3" id="page_submit">
-
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label" id="tex_from"> الأسم </label>
-              <input type="email" class="form-control" id="inp_from" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" id="tex_from"> الوجهة </label>
-              <input type="password" class="form-control" id="inp_from">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" id="tex_from"> من تاريخ </label>
-              <input placeholder="dslksd" type="date" class="form-control" id="inp_from">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" id="tex_from"> الى تاريخ </label>
-              <input type="date" class="form-control" id="inp_from">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" id="tex_from"> الشركة </label>
-              <input type="password" class="form-control" id="inp_from">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" id="tex_from"> الوزن </label>
-              <input type="password" class="form-control" id="inp_from">
-            </div>
-            <button type="submit" class="btn btn-primary" id="tex_from"> أرسال </button>
-          </form>
-
-    </div>
+      const username = 'helonan';
 
 
-      <script src="JS Bootstrap File/js/bootstrap.js"></script>
-      <script src="JS Bootstrap File/popper/popper.js"></script>
+  const inputValue = e.target.value;
+  if (inputValue.length > 0) {
+    fetch(`http://api.geonames.org/searchJSON?q=${inputValue}&maxRows=5&lang=ar&username=${username}`)
+      .then(response => response.json())
+      .then(data => {
+        const dataList = document.getElementById('cityList');
+        dataList.innerHTML = ''; // مسح البيانات السابقة
+
+        if (data && data.geonames && data.geonames.length > 0) {
+          data.geonames.forEach(city => {
+            const option = document.createElement('option');
+            option.value = `${city.name}, ${city.countryName}`; // إضافة اسم الدولة
+            dataList.appendChild(option);
+          });
+        } else {
+          const option = document.createElement('option');
+          option.value = 'لا توجد نتائج';
+          dataList.appendChild(option);
+        }
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+
+
+    }
+  </script>
 </body>
+
 </html>
