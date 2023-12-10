@@ -38,62 +38,226 @@
 
       <div class="" id="page_inns">
 
+
         <h3 class="text-white text-center mb-3 col-4" style="text-align: center; width: 100%;"> الوجهات </h3>
 
 
-        <div class="row m-1" id="page_ins">
 
-          <div class="mb-3 col-sm-12 col-lg-6">
-            <div class="input-group" id="inp_from">
-              <span class="input-group-text" id="tex_from"> من </span>
-              <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع..... ">
-              <datalist id="cityList"></datalist>
-              <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
-                  style="color: #c5d4f8;"></i></span>
+        <div class="btn-group col-12" role="group" aria-label="Basic radio toggle button group" style="direction: ltr;">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+          <label class="btn btn-outline-success text-white" for="btnradio1">وجهات متعددة</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary text-white" for="btnradio2">ذهاب وعودة</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+          <label class="btn btn-outline-primary text-white" for="btnradio3">ذهاب فقط</label>
+        </div>
+
+        <div class="row m-2" id="page_ins">
+<!-- one bookin -->
+          <div class="row g-1" style="background-color: #123777;" id="bookin_1">
+
+              <h5 class="col-12" style="color: #e7eeff; text-align: center;"> الوجهة الاولى </h5>
+
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text" id="tex_from"> من </span>
+                <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> الى </span>
+                <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> المغادرة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6" style="display: none;" id="rutet">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> العودة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
             </div>
           </div>
+<!-- 2 bookin -->
+  
+          <div class="row g-1 d-none" style="background-color: #123777;" id="bookin_2">
 
-
-          <div class="mb-3 col-sm-12 col-lg-6">
-            <div class="input-group" id="inp_from">
-              <span class="input-group-text"> الى </span>
-              <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
-              <datalist id="cityList"></datalist>
-              <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
-                  style="color: #c5d4f8;"></i></span>
+            <h5 style="color: #e7eeff; text-align: center;"> الوجهة الثانية </h5>
+            
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text" id="tex_from"> من </span>
+                <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> الى </span>
+                <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> المغادرة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6" style="display: none;" id="rutet">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> العودة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
             </div>
           </div>
+<!-- 3 bookin -->
+  
+          <div class="row g-1" style="background-color: #123777; display:none;" id="bookin_3">
 
+            <div class="row">
+              <button type="button" class="btn-close" aria-label="Close" style="background-color: #ff0000; border: 3px solid red;"></button>
+              <h5 style="color: #e7eeff; text-align: center;" class="col"> الوجهة الرابعة </h5>
+            </div>
 
-          <div class="mb-3 col-sm-12 col-lg-6">
-            <div class="input-group" id="inp_from">
-              <span class="input-group-text"> تاريخ المغادرة </span>
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
-                  style="color: #c5d4f8;"></i></span>
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text" id="tex_from"> من </span>
+                <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> الى </span>
+                <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> المغادرة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6" style="display: none;" id="rutet">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> العودة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
             </div>
           </div>
+<!-- 4 bookin -->
+  
+          <div class="row g-1" style="background-color: #123777; display:none;" id="bookin_4">
 
-
-          <div class="mb-3 col-sm-12 col-lg-6">
-            <div class="input-group" id="inp_from">
-              <span class="input-group-text"> تاريخ العودة </span>
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
-                  style="color: #c5d4f8;"></i></span>
+            <div class="row">
+              <button type="button" class="btn-close" aria-label="Close" style="background-color: #ff0000; border: 3px solid red;"></button>
+              <h5 style="color: #e7eeff; text-align: center;" class="col"> الوجهة الرابعة </h5>
             </div>
+
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text" id="tex_from"> من </span>
+                <input class="form-select" id="cityInput" type="text" list="cityList" placeholder=" بلد الاقلاع ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-departure fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> الى </span>
+                <input class="form-select" id="cityoutput" type="text" list="cityList" placeholder=" بلد الهبوط  ">
+                <datalist id="cityList"></datalist>
+                <span class="input-group-text"><i class="fa-solid fa-plane-arrival fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> المغادرة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+  
+  
+            <div class="mb-3 col-sm-12 col-lg-6" style="display: none;" id="rutet">
+              <div class="input-group" id="inp_from">
+                <span class="input-group-text"> العودة </span>
+                <input type="date" class="form-control" id="inp_from">
+                <span class="input-group-text"><i class="fa-solid fa-clock-rotate-left fa-xl"
+                    style="color: #c5d4f8;"></i></span>
+              </div>
+            </div>
+          </div>
+  
+          
+          
+          
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-success" type="button" id="btn_bookins" style="display: none;"> اضافة وجهة اخرى  <i class="fa-solid fa-file-circle-plus fa-lg" style="color: #122e5e;"></i></button>
           </div>
         </div>
+
+        
       </div>
 
 
@@ -117,8 +281,17 @@
   <script src="JS Bootstrap File/popper/popper.js"></script>
 
   <script>
-    const username = 'helonan';
 
+    let btnRadue1 = document.getElementById("btnradio1")
+    let btnRadue2 = document.getElementById("btnradio2")
+    let btnRadue3 = document.getElementById("btnradio3")
+    let inp_uot = document.getElementById("rutet")
+    let btnbookins = document.getElementById("btn_bookins")
+    let bookin1 = document.getElementById("bookin_2")
+    let bookin2 = document.getElementById("bookin_3")
+    let bookin3 = document.getElementById("bookin_4")
+
+    const username = 'helonan';
     document.getElementById('cityInput').addEventListener('input', function (event) {
       App(event)
     });
@@ -126,38 +299,60 @@
     document.getElementById('cityoutput').addEventListener('input', function (event) {
       App(event)
     });
-    
-    function App(e){
+
+    function App(e) {
 
       const username = 'helonan';
 
 
-  const inputValue = e.target.value;
-  if (inputValue.length > 0) {
-    fetch(`http://api.geonames.org/searchJSON?q=${inputValue}&maxRows=5&lang=ar&username=${username}`)
-      .then(response => response.json())
-      .then(data => {
-        const dataList = document.getElementById('cityList');
-        dataList.innerHTML = ''; // مسح البيانات السابقة
+      const inputValue = e.target.value;
+      if (inputValue.length > 0) {
+        fetch(`http://api.geonames.org/searchJSON?q=${inputValue}&maxRows=5&lang=ar&username=${username}`)
+          .then(response => response.json())
+          .then(data => {
+            const dataList = document.getElementById('cityList');
+            dataList.innerHTML = '';
 
-        if (data && data.geonames && data.geonames.length > 0) {
-          data.geonames.forEach(city => {
-            const option = document.createElement('option');
-            option.value = `${city.name}, ${city.countryName}`; // إضافة اسم الدولة
-            dataList.appendChild(option);
-          });
-        } else {
-          const option = document.createElement('option');
-          option.value = 'لا توجد نتائج';
-          dataList.appendChild(option);
-        }
-      })
-      .catch(error => console.error('Error fetching data:', error));
-  }
-
-
-
+            if (data && data.geonames && data.geonames.length > 0) {
+              data.geonames.forEach(city => {
+                const option = document.createElement('option');
+                option.value = `${city.name}, ${city.countryName}`;
+                dataList.appendChild(option);
+              });
+            } else {
+              const option = document.createElement('option');
+              option.value = 'لا توجد نتائج';
+              dataList.appendChild(option);
+            }
+          })
+          .catch(error => console.error('Error fetching data:', error));
+      }
     }
+
+    btnRadue2.addEventListener('click', () => {
+      inp_uot.style.display = 'block'
+      btnbookins.style.display = 'none'
+      bookin1.className = 'row g-1 d-none'
+
+
+    });
+    btnRadue3.addEventListener('click', () => {
+      inp_uot.style.display = 'none'
+      btnbookins.style.display = 'none'
+      bookin1.className = 'row g-1 d-none'
+
+
+    });
+    btnRadue1.addEventListener('click', () => {
+      inp_uot.style.display = 'none'
+      btnbookins.style.display = 'block'
+      bookin1.className = 'row g-1'
+    });
+
+    btnbookins.addEventListener('click', () => {
+      
+    });
+
   </script>
 </body>
 

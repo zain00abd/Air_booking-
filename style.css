@@ -30,6 +30,10 @@ form{
     font-size: 18px;
 }
 
+#bookin_1,#bookin_2,#bookin_3,#bookin_4{
+    border-radius: 12px;
+}
+
 #page_ins{
     padding: 10px;
     background-color:rgba(42, 148, 183, 0.452);
